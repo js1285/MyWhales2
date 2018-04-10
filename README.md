@@ -1,2 +1,2 @@
-# MyWhales2
-Improving Whales
+# Whales
+Whale recognition competition

@@ -1,0 +1,12 @@
+Benötigte Bibliotheken:
+
+scikit-image                    (install with pip3)
+tensorflow (cpu oder gpu)
+Keras                           (install with pip3)
+h5py                            (install with pip3)
+pydot                           (install with pip3) (for keras.utils.plot_model())
+graphviz                        (install with sudo apt-get) (for keras.utils.plot_model())
+
+KEIN pipenv mehr für das Projekt.
+
+

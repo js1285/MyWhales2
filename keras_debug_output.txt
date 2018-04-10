@@ -1,0 +1,954 @@
+2018-02-06 16:40:23.921870: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-02-06 16:40:23.921894: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-02-06 16:40:23.921900: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2018-02-06 16:40:23.921904: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-02-06 16:40:23.921908: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2018-02-06 16:40:24.034768: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:893] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-02-06 16:40:24.035004: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 0 with properties: 
+name: GeForce GTX 1060 3GB
+major: 6 minor: 1 memoryClockRate (GHz) 1.7085
+pciBusID 0000:01:00.0
+Total memory: 2.95GiB
+Free memory: 2.75GiB
+2018-02-06 16:40:24.035019: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 0 
+2018-02-06 16:40:24.035025: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 0:   Y 
+2018-02-06 16:40:24.035033: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 1060 3GB, pci bus id: 0000:01:00.0)
+/home/wilhelmb/.local/lib/python3.5/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Using TensorFlow backend.
+INFO:hpbandster:DISPATCHER: started the 'discover_worker' thread
+INFO:hpbandster:DISPATCHER: started the 'job_runner' thread
+DEBUG:hpbandster.run_0.worker.tfpool57.19110:WORKER: Connected to nameserver <Pyro4.core.Proxy at 0x7f8f48196c18; connected IPv4; for PYRO:Pyro.NameServer@localhost:37451>
+DEBUG:hpbandster.run_0.worker.tfpool57.19110:WORKER: No dispatcher found. Waiting for one to initiate contact.
+INFO:hpbandster.run_0.worker.tfpool57.19110:WORKER: start listening for jobs
+INFO:hpbandster:DISPATCHER: Pyro daemon running on localhost:41357
+DEBUG:hpbandster:DISPATCHER: Starting worker discovery
+DEBUG:hpbandster:DISPATCHER: Found 1 potential workers, 0 currently in the pool.
+INFO:hpbandster:DISPATCHER: discovered new worker, hpbandster.run_0.worker.tfpool57.19110140255077799680
+DEBUG:hpbandster:DISPATCHER: Finished worker discovery
+DEBUG:hpbandster:DISPATCHER: jobs to submit = 0, number of idle workers = 1 -> waiting!
+DEBUG:hpbandster:HBMASTER: only 1 worker(s) available, waiting for at least 1.
+INFO:hpbandster:HBMASTER: starting run at 1517931625.2380855
+DEBUG:hpbandster:HBMASTER: schedule new run for iteration 0
+DEBUG:hpbandster:HBMASTER: submitting job (0, 0, 0) to dispatcher
+DEBUG:hpbandster:DISPATCHER: trying to submit job (0, 0, 0)
+DEBUG:hpbandster:DISPATCHER: trying to notify the job_runner thread.
+DEBUG:hpbandster:HBMASTER: job (0, 0, 0) submitted to dispatcher
+DEBUG:hpbandster:DISPATCHER: Trying to submit another job.
+DEBUG:hpbandster:HBMASTER: schedule new run for iteration 0
+DEBUG:hpbandster:DISPATCHER: starting job (0, 0, 0) on hpbandster.run_0.worker.tfpool57.19110140255077799680
+DEBUG:hpbandster:HBMASTER: submitting job (0, 0, 1) to dispatcher
+DEBUG:hpbandster:DISPATCHER: job (0, 0, 0) dispatched on hpbandster.run_0.worker.tfpool57.19110140255077799680
+DEBUG:hpbandster:HBMASTER: running jobs: 1, queue sizes: (0, 1) -> wait
+DEBUG:hpbandster:DISPATCHER: jobs to submit = 0, number of idle workers = 0 -> waiting!
+INFO:hpbandster.run_0.worker.tfpool57.19110:WORKER: start processing job (0, 0, 0)
+DEBUG:hpbandster.run_0.worker.tfpool57.19110:WORKER: args: ()
+DEBUG:hpbandster.run_0.worker.tfpool57.19110:WORKER: kwargs: {'config': {'test_parameter': 14.556259786632825}, 'budget': 1.25, 'working_directory': '.'}
+2018-02-06 16:40:27.701747: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 1060 3GB, pci bus id: 0000:01:00.0)
+DEBUG:hpbandster.run_0.worker.tfpool57.19110:WORKER: done with job (0, 0, 0), trying to register it.
+INFO:hpbandster.run_0.worker.tfpool57.19110:WORKER: registered result for job (0, 0, 0) with dispatcher
+DEBUG:hpbandster:DISPATCHER: job (0, 0, 0) finished
+DEBUG:hpbandster:DISPATCHER: register_result: lock acquired
+DEBUG:hpbandster:DISPATCHER: job (0, 0, 0) on hpbandster.run_0.worker.tfpool57.19110140255077799680 finished
+DEBUG:hpbandster:job_id: (0, 0, 0)
+args: ()
+kwargs: {'config': {'test_parameter': 14.556259786632825}, 'budget': 1.25, 'working_directory': '.'}
+result: {'loss': 0.5, 'info': {'runtime': 3, 'histories': []}}
+exception: None
+
+DEBUG:hpbandster:job_callback for (0, 0, 0)
+DEBUG:hpbandster:DISPATCHER: Trying to submit another job.
+DEBUG:hpbandster:HBMASTER: Trying to run another job!
+DEBUG:hpbandster:DISPATCHER: jobs to submit = 0, number of idle workers = 1 -> waiting!
+DEBUG:hpbandster:DISPATCHER: trying to submit job (0, 0, 1)
+DEBUG:hpbandster:DISPATCHER: trying to notify the job_runner thread.
+DEBUG:hpbandster:HBMASTER: job (0, 0, 1) submitted to dispatcher
+DEBUG:hpbandster:DISPATCHER: Trying to submit another job.
+DEBUG:hpbandster:HBMASTER: schedule new run for iteration 0
+DEBUG:hpbandster:DISPATCHER: starting job (0, 0, 1) on hpbandster.run_0.worker.tfpool57.19110140255077799680
+DEBUG:hpbandster:HBMASTER: submitting job (0, 0, 2) to dispatcher
+DEBUG:hpbandster:HBMASTER: running jobs: 1, queue sizes: (0, 1) -> wait
+DEBUG:hpbandster:DISPATCHER: job (0, 0, 1) dispatched on hpbandster.run_0.worker.tfpool57.19110140255077799680
+DEBUG:hpbandster:DISPATCHER: jobs to submit = 0, number of idle workers = 0 -> waiting!
+INFO:hpbandster.run_0.worker.tfpool57.19110:WORKER: start processing job (0, 0, 1)
+DEBUG:hpbandster.run_0.worker.tfpool57.19110:WORKER: args: ()
+DEBUG:hpbandster.run_0.worker.tfpool57.19110:WORKER: kwargs: {'config': {'test_parameter': 15.460775958816209}, 'budget': 1.25, 'working_directory': '.'}
+DEBUG:hpbandster.run_0.worker.tfpool57.19110:WORKER: done with job (0, 0, 1), trying to register it.
+INFO:hpbandster.run_0.worker.tfpool57.19110:WORKER: registered result for job (0, 0, 1) with dispatcher
+DEBUG:hpbandster:DISPATCHER: job (0, 0, 1) finished
+DEBUG:hpbandster:DISPATCHER: register_result: lock acquired
+DEBUG:hpbandster:DISPATCHER: job (0, 0, 1) on hpbandster.run_0.worker.tfpool57.19110140255077799680 finished
+DEBUG:hpbandster:job_id: (0, 0, 1)
+args: ()
+kwargs: {'config': {'test_parameter': 15.460775958816209}, 'budget': 1.25, 'working_directory': '.'}
+result: None
+exception: Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1068, in _run
+    allow_operation=False)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 2708, in as_graph_element
+    return self._as_graph_element_locked(obj, allow_tensor, allow_operation)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 2787, in _as_graph_element_locked
+    raise ValueError("Tensor %s is not an element of this graph." % obj)
+ValueError: Tensor Tensor("Placeholder_161:0", shape=(160,), dtype=float32) is not an element of this graph.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wilhelmb/.local/lib/python3.5/site-packages/hpbandster-0.1.0-py3.5.egg/hpbandster/distributed/worker.py", line 106, in start_computation
+    result = {'result': self.compute(*args, **kwargs),
+  File "keras_debug.py", line 38, in compute
+    *args, **kwargs)
+  File "keras_debug.py", line 28, in keras_objective
+    load_model()
+  File "keras_debug.py", line 74, in load_model
+    pretrained_model = InceptionV3(weights='imagenet', include_top=False)
+  File "/usr/local/lib/python3.5/dist-packages/keras/applications/inception_v3.py", line 387, in InceptionV3
+    model.load_weights(weights_path)
+  File "/usr/local/lib/python3.5/dist-packages/keras/engine/topology.py", line 2622, in load_weights
+    load_weights_from_hdf5_group(f, self.layers)
+  File "/usr/local/lib/python3.5/dist-packages/keras/engine/topology.py", line 3142, in load_weights_from_hdf5_group
+    K.batch_set_value(weight_value_tuples)
+  File "/usr/local/lib/python3.5/dist-packages/keras/backend/tensorflow_backend.py", line 2243, in batch_set_value
+    get_session().run(assign_ops, feed_dict=feed_dict)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 895, in run
+    run_metadata_ptr)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1071, in _run
+    + e.args[0])
+TypeError: Cannot interpret feed_dict key as Tensor: Tensor Tensor("Placeholder_161:0", shape=(160,), dtype=float32) is not an element of this graph.
+
+
+DEBUG:hpbandster:job_callback for (0, 0, 1)
+DEBUG:hpbandster:HBMASTER: Trying to run another job!
+WARNING:hpbandster:job (0, 0, 1) failed with exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1068, in _run
+    allow_operation=False)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 2708, in as_graph_element
+    return self._as_graph_element_locked(obj, allow_tensor, allow_operation)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 2787, in _as_graph_element_locked
+    raise ValueError("Tensor %s is not an element of this graph." % obj)
+ValueError: Tensor Tensor("Placeholder_161:0", shape=(160,), dtype=float32) is not an element of this graph.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wilhelmb/.local/lib/python3.5/site-packages/hpbandster-0.1.0-py3.5.egg/hpbandster/distributed/worker.py", line 106, in start_computation
+    result = {'result': self.compute(*args, **kwargs),
+  File "keras_debug.py", line 38, in compute
+    *args, **kwargs)
+  File "keras_debug.py", line 28, in keras_objective
+    load_model()
+  File "keras_debug.py", line 74, in load_model
+    pretrained_model = InceptionV3(weights='imagenet', include_top=False)
+  File "/usr/local/lib/python3.5/dist-packages/keras/applications/inception_v3.py", line 387, in InceptionV3
+    model.load_weights(weights_path)
+  File "/usr/local/lib/python3.5/dist-packages/keras/engine/topology.py", line 2622, in load_weights
+    load_weights_from_hdf5_group(f, self.layers)
+  File "/usr/local/lib/python3.5/dist-packages/keras/engine/topology.py", line 3142, in load_weights_from_hdf5_group
+    K.batch_set_value(weight_value_tuples)
+  File "/usr/local/lib/python3.5/dist-packages/keras/backend/tensorflow_backend.py", line 2243, in batch_set_value
+    get_session().run(assign_ops, feed_dict=feed_dict)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 895, in run
+    run_metadata_ptr)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1071, in _run
+    + e.args[0])
+TypeError: Cannot interpret feed_dict key as Tensor: Tensor Tensor("Placeholder_161:0", shape=(160,), dtype=float32) is not an element of this graph.
+
+DEBUG:hpbandster:DISPATCHER: trying to submit job (0, 0, 2)
+DEBUG:hpbandster:DISPATCHER: trying to notify the job_runner thread.
+DEBUG:hpbandster:HBMASTER: job (0, 0, 2) submitted to dispatcher
+DEBUG:hpbandster:DISPATCHER: Trying to submit another job.
+DEBUG:hpbandster:HBMASTER: schedule new run for iteration 0
+DEBUG:hpbandster:DISPATCHER: starting job (0, 0, 2) on hpbandster.run_0.worker.tfpool57.19110140255077799680
+DEBUG:hpbandster:HBMASTER: submitting job (0, 0, 3) to dispatcher
+DEBUG:hpbandster:HBMASTER: running jobs: 1, queue sizes: (0, 1) -> wait
+DEBUG:hpbandster:DISPATCHER: job (0, 0, 2) dispatched on hpbandster.run_0.worker.tfpool57.19110140255077799680
+DEBUG:hpbandster:DISPATCHER: jobs to submit = 0, number of idle workers = 0 -> waiting!
+INFO:hpbandster.run_0.worker.tfpool57.19110:WORKER: start processing job (0, 0, 2)
+DEBUG:hpbandster.run_0.worker.tfpool57.19110:WORKER: args: ()
+DEBUG:hpbandster.run_0.worker.tfpool57.19110:WORKER: kwargs: {'config': {'test_parameter': 17.552679177701105}, 'budget': 1.25, 'working_directory': '.'}
+DEBUG:hpbandster.run_0.worker.tfpool57.19110:WORKER: done with job (0, 0, 2), trying to register it.
+INFO:hpbandster.run_0.worker.tfpool57.19110:WORKER: registered result for job (0, 0, 2) with dispatcher
+DEBUG:hpbandster:DISPATCHER: job (0, 0, 2) finished
+DEBUG:hpbandster:DISPATCHER: register_result: lock acquired
+DEBUG:hpbandster:DISPATCHER: job (0, 0, 2) on hpbandster.run_0.worker.tfpool57.19110140255077799680 finished
+DEBUG:hpbandster:job_id: (0, 0, 2)
+args: ()
+kwargs: {'config': {'test_parameter': 17.552679177701105}, 'budget': 1.25, 'working_directory': '.'}
+result: None
+exception: Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1068, in _run
+    allow_operation=False)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 2708, in as_graph_element
+    return self._as_graph_element_locked(obj, allow_tensor, allow_operation)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 2787, in _as_graph_element_locked
+    raise ValueError("Tensor %s is not an element of this graph." % obj)
+ValueError: Tensor Tensor("Placeholder_5:0", shape=(32,), dtype=float32) is not an element of this graph.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wilhelmb/.local/lib/python3.5/site-packages/hpbandster-0.1.0-py3.5.egg/hpbandster/distributed/worker.py", line 106, in start_computation
+    result = {'result': self.compute(*args, **kwargs),
+  File "keras_debug.py", line 38, in compute
+    *args, **kwargs)
+  File "keras_debug.py", line 28, in keras_objective
+    load_model()
+  File "keras_debug.py", line 74, in load_model
+    pretrained_model = InceptionV3(weights='imagenet', include_top=False)
+  File "/usr/local/lib/python3.5/dist-packages/keras/applications/inception_v3.py", line 387, in InceptionV3
+    model.load_weights(weights_path)
+  File "/usr/local/lib/python3.5/dist-packages/keras/engine/topology.py", line 2622, in load_weights
+    load_weights_from_hdf5_group(f, self.layers)
+  File "/usr/local/lib/python3.5/dist-packages/keras/engine/topology.py", line 3142, in load_weights_from_hdf5_group
+    K.batch_set_value(weight_value_tuples)
+  File "/usr/local/lib/python3.5/dist-packages/keras/backend/tensorflow_backend.py", line 2243, in batch_set_value
+    get_session().run(assign_ops, feed_dict=feed_dict)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 895, in run
+    run_metadata_ptr)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1071, in _run
+    + e.args[0])
+TypeError: Cannot interpret feed_dict key as Tensor: Tensor Tensor("Placeholder_5:0", shape=(32,), dtype=float32) is not an element of this graph.
+
+
+DEBUG:hpbandster:job_callback for (0, 0, 2)
+DEBUG:hpbandster:HBMASTER: Trying to run another job!
+WARNING:hpbandster:job (0, 0, 2) failed with exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1068, in _run
+    allow_operation=False)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 2708, in as_graph_element
+    return self._as_graph_element_locked(obj, allow_tensor, allow_operation)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 2787, in _as_graph_element_locked
+    raise ValueError("Tensor %s is not an element of this graph." % obj)
+ValueError: Tensor Tensor("Placeholder_5:0", shape=(32,), dtype=float32) is not an element of this graph.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wilhelmb/.local/lib/python3.5/site-packages/hpbandster-0.1.0-py3.5.egg/hpbandster/distributed/worker.py", line 106, in start_computation
+    result = {'result': self.compute(*args, **kwargs),
+  File "keras_debug.py", line 38, in compute
+    *args, **kwargs)
+  File "keras_debug.py", line 28, in keras_objective
+    load_model()
+  File "keras_debug.py", line 74, in load_model
+    pretrained_model = InceptionV3(weights='imagenet', include_top=False)
+  File "/usr/local/lib/python3.5/dist-packages/keras/applications/inception_v3.py", line 387, in InceptionV3
+    model.load_weights(weights_path)
+  File "/usr/local/lib/python3.5/dist-packages/keras/engine/topology.py", line 2622, in load_weights
+    load_weights_from_hdf5_group(f, self.layers)
+  File "/usr/local/lib/python3.5/dist-packages/keras/engine/topology.py", line 3142, in load_weights_from_hdf5_group
+    K.batch_set_value(weight_value_tuples)
+  File "/usr/local/lib/python3.5/dist-packages/keras/backend/tensorflow_backend.py", line 2243, in batch_set_value
+    get_session().run(assign_ops, feed_dict=feed_dict)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 895, in run
+    run_metadata_ptr)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1071, in _run
+    + e.args[0])
+TypeError: Cannot interpret feed_dict key as Tensor: Tensor Tensor("Placeholder_5:0", shape=(32,), dtype=float32) is not an element of this graph.
+
+DEBUG:hpbandster:DISPATCHER: Trying to submit another job.
+DEBUG:hpbandster:DISPATCHER: trying to submit job (0, 0, 3)
+DEBUG:hpbandster:DISPATCHER: jobs to submit = 0, number of idle workers = 1 -> waiting!
+DEBUG:hpbandster:DISPATCHER: trying to notify the job_runner thread.
+DEBUG:hpbandster:HBMASTER: job (0, 0, 3) submitted to dispatcher
+DEBUG:hpbandster:DISPATCHER: Trying to submit another job.
+DEBUG:hpbandster:HBMASTER: schedule new run for iteration 1
+DEBUG:hpbandster:HBMASTER: submitting job (1, 0, 0) to dispatcher
+DEBUG:hpbandster:DISPATCHER: starting job (0, 0, 3) on hpbandster.run_0.worker.tfpool57.19110140255077799680
+DEBUG:hpbandster:HBMASTER: running jobs: 1, queue sizes: (0, 1) -> wait
+DEBUG:hpbandster:DISPATCHER: job (0, 0, 3) dispatched on hpbandster.run_0.worker.tfpool57.19110140255077799680
+DEBUG:hpbandster:DISPATCHER: jobs to submit = 0, number of idle workers = 0 -> waiting!
+INFO:hpbandster.run_0.worker.tfpool57.19110:WORKER: start processing job (0, 0, 3)
+DEBUG:hpbandster.run_0.worker.tfpool57.19110:WORKER: args: ()
+DEBUG:hpbandster.run_0.worker.tfpool57.19110:WORKER: kwargs: {'config': {'test_parameter': 19.268064572081467}, 'budget': 1.25, 'working_directory': '.'}
+DEBUG:hpbandster.run_0.worker.tfpool57.19110:WORKER: done with job (0, 0, 3), trying to register it.
+INFO:hpbandster.run_0.worker.tfpool57.19110:WORKER: registered result for job (0, 0, 3) with dispatcher
+DEBUG:hpbandster:DISPATCHER: job (0, 0, 3) finished
+DEBUG:hpbandster:DISPATCHER: register_result: lock acquired
+DEBUG:hpbandster:DISPATCHER: job (0, 0, 3) on hpbandster.run_0.worker.tfpool57.19110140255077799680 finished
+DEBUG:hpbandster:job_id: (0, 0, 3)
+args: ()
+kwargs: {'config': {'test_parameter': 19.268064572081467}, 'budget': 1.25, 'working_directory': '.'}
+result: None
+exception: Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1068, in _run
+    allow_operation=False)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 2708, in as_graph_element
+    return self._as_graph_element_locked(obj, allow_tensor, allow_operation)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 2787, in _as_graph_element_locked
+    raise ValueError("Tensor %s is not an element of this graph." % obj)
+ValueError: Tensor Tensor("Placeholder_45:0", shape=(32,), dtype=float32) is not an element of this graph.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wilhelmb/.local/lib/python3.5/site-packages/hpbandster-0.1.0-py3.5.egg/hpbandster/distributed/worker.py", line 106, in start_computation
+    result = {'result': self.compute(*args, **kwargs),
+  File "keras_debug.py", line 38, in compute
+    *args, **kwargs)
+  File "keras_debug.py", line 28, in keras_objective
+    load_model()
+  File "keras_debug.py", line 74, in load_model
+    pretrained_model = InceptionV3(weights='imagenet', include_top=False)
+  File "/usr/local/lib/python3.5/dist-packages/keras/applications/inception_v3.py", line 387, in InceptionV3
+    model.load_weights(weights_path)
+  File "/usr/local/lib/python3.5/dist-packages/keras/engine/topology.py", line 2622, in load_weights
+    load_weights_from_hdf5_group(f, self.layers)
+  File "/usr/local/lib/python3.5/dist-packages/keras/engine/topology.py", line 3142, in load_weights_from_hdf5_group
+    K.batch_set_value(weight_value_tuples)
+  File "/usr/local/lib/python3.5/dist-packages/keras/backend/tensorflow_backend.py", line 2243, in batch_set_value
+    get_session().run(assign_ops, feed_dict=feed_dict)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 895, in run
+    run_metadata_ptr)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1071, in _run
+    + e.args[0])
+TypeError: Cannot interpret feed_dict key as Tensor: Tensor Tensor("Placeholder_45:0", shape=(32,), dtype=float32) is not an element of this graph.
+
+
+DEBUG:hpbandster:job_callback for (0, 0, 3)
+DEBUG:hpbandster:DISPATCHER: Trying to submit another job.
+DEBUG:hpbandster:HBMASTER: Trying to run another job!
+DEBUG:hpbandster:DISPATCHER: jobs to submit = 0, number of idle workers = 1 -> waiting!
+WARNING:hpbandster:job (0, 0, 3) failed with exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1068, in _run
+    allow_operation=False)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 2708, in as_graph_element
+    return self._as_graph_element_locked(obj, allow_tensor, allow_operation)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 2787, in _as_graph_element_locked
+    raise ValueError("Tensor %s is not an element of this graph." % obj)
+ValueError: Tensor Tensor("Placeholder_45:0", shape=(32,), dtype=float32) is not an element of this graph.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wilhelmb/.local/lib/python3.5/site-packages/hpbandster-0.1.0-py3.5.egg/hpbandster/distributed/worker.py", line 106, in start_computation
+    result = {'result': self.compute(*args, **kwargs),
+  File "keras_debug.py", line 38, in compute
+    *args, **kwargs)
+  File "keras_debug.py", line 28, in keras_objective
+    load_model()
+  File "keras_debug.py", line 74, in load_model
+    pretrained_model = InceptionV3(weights='imagenet', include_top=False)
+  File "/usr/local/lib/python3.5/dist-packages/keras/applications/inception_v3.py", line 387, in InceptionV3
+    model.load_weights(weights_path)
+  File "/usr/local/lib/python3.5/dist-packages/keras/engine/topology.py", line 2622, in load_weights
+    load_weights_from_hdf5_group(f, self.layers)
+  File "/usr/local/lib/python3.5/dist-packages/keras/engine/topology.py", line 3142, in load_weights_from_hdf5_group
+    K.batch_set_value(weight_value_tuples)
+  File "/usr/local/lib/python3.5/dist-packages/keras/backend/tensorflow_backend.py", line 2243, in batch_set_value
+    get_session().run(assign_ops, feed_dict=feed_dict)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 895, in run
+    run_metadata_ptr)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1071, in _run
+    + e.args[0])
+TypeError: Cannot interpret feed_dict key as Tensor: Tensor Tensor("Placeholder_45:0", shape=(32,), dtype=float32) is not an element of this graph.
+
+DEBUG:hpbandster:DISPATCHER: trying to submit job (1, 0, 0)
+DEBUG:hpbandster:DISPATCHER: trying to notify the job_runner thread.
+DEBUG:hpbandster:HBMASTER: job (1, 0, 0) submitted to dispatcher
+DEBUG:hpbandster:HBMASTER: schedule new run for iteration 0
+DEBUG:hpbandster:DISPATCHER: Trying to submit another job.
+DEBUG:hpbandster:HBMASTER: submitting job (0, 0, 0) to dispatcher
+DEBUG:hpbandster:DISPATCHER: starting job (1, 0, 0) on hpbandster.run_0.worker.tfpool57.19110140255077799680
+DEBUG:hpbandster:HBMASTER: running jobs: 1, queue sizes: (0, 1) -> wait
+DEBUG:hpbandster:DISPATCHER: job (1, 0, 0) dispatched on hpbandster.run_0.worker.tfpool57.19110140255077799680
+DEBUG:hpbandster:DISPATCHER: jobs to submit = 0, number of idle workers = 0 -> waiting!
+INFO:hpbandster.run_0.worker.tfpool57.19110:WORKER: start processing job (1, 0, 0)
+DEBUG:hpbandster.run_0.worker.tfpool57.19110:WORKER: args: ()
+DEBUG:hpbandster.run_0.worker.tfpool57.19110:WORKER: kwargs: {'config': {'test_parameter': 12.54734766407454}, 'budget': 2.5, 'working_directory': '.'}
+DEBUG:hpbandster.run_0.worker.tfpool57.19110:WORKER: done with job (1, 0, 0), trying to register it.
+INFO:hpbandster.run_0.worker.tfpool57.19110:WORKER: registered result for job (1, 0, 0) with dispatcher
+DEBUG:hpbandster:DISPATCHER: job (1, 0, 0) finished
+DEBUG:hpbandster:DISPATCHER: register_result: lock acquired
+DEBUG:hpbandster:DISPATCHER: job (1, 0, 0) on hpbandster.run_0.worker.tfpool57.19110140255077799680 finished
+DEBUG:hpbandster:job_id: (1, 0, 0)
+args: ()
+kwargs: {'config': {'test_parameter': 12.54734766407454}, 'budget': 2.5, 'working_directory': '.'}
+result: None
+exception: Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1068, in _run
+    allow_operation=False)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 2708, in as_graph_element
+    return self._as_graph_element_locked(obj, allow_tensor, allow_operation)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 2787, in _as_graph_element_locked
+    raise ValueError("Tensor %s is not an element of this graph." % obj)
+ValueError: Tensor Tensor("Placeholder_44:0", shape=(96,), dtype=float32) is not an element of this graph.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wilhelmb/.local/lib/python3.5/site-packages/hpbandster-0.1.0-py3.5.egg/hpbandster/distributed/worker.py", line 106, in start_computation
+    result = {'result': self.compute(*args, **kwargs),
+  File "keras_debug.py", line 38, in compute
+    *args, **kwargs)
+  File "keras_debug.py", line 28, in keras_objective
+    load_model()
+  File "keras_debug.py", line 74, in load_model
+    pretrained_model = InceptionV3(weights='imagenet', include_top=False)
+  File "/usr/local/lib/python3.5/dist-packages/keras/applications/inception_v3.py", line 387, in InceptionV3
+    model.load_weights(weights_path)
+  File "/usr/local/lib/python3.5/dist-packages/keras/engine/topology.py", line 2622, in load_weights
+    load_weights_from_hdf5_group(f, self.layers)
+  File "/usr/local/lib/python3.5/dist-packages/keras/engine/topology.py", line 3142, in load_weights_from_hdf5_group
+    K.batch_set_value(weight_value_tuples)
+  File "/usr/local/lib/python3.5/dist-packages/keras/backend/tensorflow_backend.py", line 2243, in batch_set_value
+    get_session().run(assign_ops, feed_dict=feed_dict)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 895, in run
+    run_metadata_ptr)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1071, in _run
+    + e.args[0])
+TypeError: Cannot interpret feed_dict key as Tensor: Tensor Tensor("Placeholder_44:0", shape=(96,), dtype=float32) is not an element of this graph.
+
+
+DEBUG:hpbandster:job_callback for (1, 0, 0)
+DEBUG:hpbandster:DISPATCHER: Trying to submit another job.
+DEBUG:hpbandster:HBMASTER: Trying to run another job!
+DEBUG:hpbandster:DISPATCHER: jobs to submit = 0, number of idle workers = 1 -> waiting!
+WARNING:hpbandster:job (1, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1068, in _run
+    allow_operation=False)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 2708, in as_graph_element
+    return self._as_graph_element_locked(obj, allow_tensor, allow_operation)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 2787, in _as_graph_element_locked
+    raise ValueError("Tensor %s is not an element of this graph." % obj)
+ValueError: Tensor Tensor("Placeholder_44:0", shape=(96,), dtype=float32) is not an element of this graph.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wilhelmb/.local/lib/python3.5/site-packages/hpbandster-0.1.0-py3.5.egg/hpbandster/distributed/worker.py", line 106, in start_computation
+    result = {'result': self.compute(*args, **kwargs),
+  File "keras_debug.py", line 38, in compute
+    *args, **kwargs)
+  File "keras_debug.py", line 28, in keras_objective
+    load_model()
+  File "keras_debug.py", line 74, in load_model
+    pretrained_model = InceptionV3(weights='imagenet', include_top=False)
+  File "/usr/local/lib/python3.5/dist-packages/keras/applications/inception_v3.py", line 387, in InceptionV3
+    model.load_weights(weights_path)
+  File "/usr/local/lib/python3.5/dist-packages/keras/engine/topology.py", line 2622, in load_weights
+    load_weights_from_hdf5_group(f, self.layers)
+  File "/usr/local/lib/python3.5/dist-packages/keras/engine/topology.py", line 3142, in load_weights_from_hdf5_group
+    K.batch_set_value(weight_value_tuples)
+  File "/usr/local/lib/python3.5/dist-packages/keras/backend/tensorflow_backend.py", line 2243, in batch_set_value
+    get_session().run(assign_ops, feed_dict=feed_dict)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 895, in run
+    run_metadata_ptr)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1071, in _run
+    + e.args[0])
+TypeError: Cannot interpret feed_dict key as Tensor: Tensor Tensor("Placeholder_44:0", shape=(96,), dtype=float32) is not an element of this graph.
+
+DEBUG:hpbandster:DISPATCHER: trying to submit job (0, 0, 0)
+DEBUG:hpbandster:DISPATCHER: trying to notify the job_runner thread.
+DEBUG:hpbandster:HBMASTER: job (0, 0, 0) submitted to dispatcher
+DEBUG:hpbandster:DISPATCHER: Trying to submit another job.
+DEBUG:hpbandster:HBMASTER: schedule new run for iteration 0
+DEBUG:hpbandster:DISPATCHER: starting job (0, 0, 0) on hpbandster.run_0.worker.tfpool57.19110140255077799680
+DEBUG:hpbandster:HBMASTER: submitting job (0, 1, 1) to dispatcher
+DEBUG:hpbandster:HBMASTER: running jobs: 1, queue sizes: (0, 1) -> wait
+DEBUG:hpbandster:DISPATCHER: job (0, 0, 0) dispatched on hpbandster.run_0.worker.tfpool57.19110140255077799680
+DEBUG:hpbandster:DISPATCHER: jobs to submit = 0, number of idle workers = 0 -> waiting!
+INFO:hpbandster.run_0.worker.tfpool57.19110:WORKER: start processing job (0, 0, 0)
+DEBUG:hpbandster.run_0.worker.tfpool57.19110:WORKER: args: ()
+DEBUG:hpbandster.run_0.worker.tfpool57.19110:WORKER: kwargs: {'config': {'test_parameter': 14.556259786632825}, 'budget': 2.5, 'working_directory': '.'}
+DEBUG:hpbandster.run_0.worker.tfpool57.19110:WORKER: done with job (0, 0, 0), trying to register it.
+INFO:hpbandster.run_0.worker.tfpool57.19110:WORKER: registered result for job (0, 0, 0) with dispatcher
+DEBUG:hpbandster:DISPATCHER: job (0, 0, 0) finished
+DEBUG:hpbandster:DISPATCHER: register_result: lock acquired
+DEBUG:hpbandster:DISPATCHER: job (0, 0, 0) on hpbandster.run_0.worker.tfpool57.19110140255077799680 finished
+DEBUG:hpbandster:job_id: (0, 0, 0)
+args: ()
+kwargs: {'config': {'test_parameter': 14.556259786632825}, 'budget': 2.5, 'working_directory': '.'}
+result: None
+exception: Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1068, in _run
+    allow_operation=False)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 2708, in as_graph_element
+    return self._as_graph_element_locked(obj, allow_tensor, allow_operation)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 2787, in _as_graph_element_locked
+    raise ValueError("Tensor %s is not an element of this graph." % obj)
+ValueError: Tensor Tensor("Placeholder_85:0", shape=(96,), dtype=float32) is not an element of this graph.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wilhelmb/.local/lib/python3.5/site-packages/hpbandster-0.1.0-py3.5.egg/hpbandster/distributed/worker.py", line 106, in start_computation
+    result = {'result': self.compute(*args, **kwargs),
+  File "keras_debug.py", line 38, in compute
+    *args, **kwargs)
+  File "keras_debug.py", line 28, in keras_objective
+    load_model()
+  File "keras_debug.py", line 74, in load_model
+    pretrained_model = InceptionV3(weights='imagenet', include_top=False)
+  File "/usr/local/lib/python3.5/dist-packages/keras/applications/inception_v3.py", line 387, in InceptionV3
+    model.load_weights(weights_path)
+  File "/usr/local/lib/python3.5/dist-packages/keras/engine/topology.py", line 2622, in load_weights
+    load_weights_from_hdf5_group(f, self.layers)
+  File "/usr/local/lib/python3.5/dist-packages/keras/engine/topology.py", line 3142, in load_weights_from_hdf5_group
+    K.batch_set_value(weight_value_tuples)
+  File "/usr/local/lib/python3.5/dist-packages/keras/backend/tensorflow_backend.py", line 2243, in batch_set_value
+    get_session().run(assign_ops, feed_dict=feed_dict)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 895, in run
+    run_metadata_ptr)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1071, in _run
+    + e.args[0])
+TypeError: Cannot interpret feed_dict key as Tensor: Tensor Tensor("Placeholder_85:0", shape=(96,), dtype=float32) is not an element of this graph.
+
+
+DEBUG:hpbandster:job_callback for (0, 0, 0)
+DEBUG:hpbandster:HBMASTER: Trying to run another job!
+WARNING:hpbandster:job (0, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1068, in _run
+    allow_operation=False)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 2708, in as_graph_element
+    return self._as_graph_element_locked(obj, allow_tensor, allow_operation)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 2787, in _as_graph_element_locked
+    raise ValueError("Tensor %s is not an element of this graph." % obj)
+ValueError: Tensor Tensor("Placeholder_85:0", shape=(96,), dtype=float32) is not an element of this graph.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wilhelmb/.local/lib/python3.5/site-packages/hpbandster-0.1.0-py3.5.egg/hpbandster/distributed/worker.py", line 106, in start_computation
+    result = {'result': self.compute(*args, **kwargs),
+  File "keras_debug.py", line 38, in compute
+    *args, **kwargs)
+  File "keras_debug.py", line 28, in keras_objective
+    load_model()
+  File "keras_debug.py", line 74, in load_model
+    pretrained_model = InceptionV3(weights='imagenet', include_top=False)
+  File "/usr/local/lib/python3.5/dist-packages/keras/applications/inception_v3.py", line 387, in InceptionV3
+    model.load_weights(weights_path)
+  File "/usr/local/lib/python3.5/dist-packages/keras/engine/topology.py", line 2622, in load_weights
+    load_weights_from_hdf5_group(f, self.layers)
+  File "/usr/local/lib/python3.5/dist-packages/keras/engine/topology.py", line 3142, in load_weights_from_hdf5_group
+    K.batch_set_value(weight_value_tuples)
+  File "/usr/local/lib/python3.5/dist-packages/keras/backend/tensorflow_backend.py", line 2243, in batch_set_value
+    get_session().run(assign_ops, feed_dict=feed_dict)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 895, in run
+    run_metadata_ptr)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1071, in _run
+    + e.args[0])
+TypeError: Cannot interpret feed_dict key as Tensor: Tensor Tensor("Placeholder_85:0", shape=(96,), dtype=float32) is not an element of this graph.
+
+DEBUG:hpbandster:DISPATCHER: trying to submit job (0, 1, 1)
+DEBUG:hpbandster:DISPATCHER: Trying to submit another job.
+DEBUG:hpbandster:DISPATCHER: jobs to submit = 0, number of idle workers = 1 -> waiting!
+DEBUG:hpbandster:DISPATCHER: trying to notify the job_runner thread.
+DEBUG:hpbandster:HBMASTER: job (0, 1, 1) submitted to dispatcher
+DEBUG:hpbandster:DISPATCHER: Trying to submit another job.
+DEBUG:hpbandster:HBMASTER: schedule new run for iteration 1
+DEBUG:hpbandster:DISPATCHER: starting job (0, 1, 1) on hpbandster.run_0.worker.tfpool57.19110140255077799680
+DEBUG:hpbandster:HBMASTER: submitting job (1, 0, 1) to dispatcher
+DEBUG:hpbandster:HBMASTER: running jobs: 1, queue sizes: (0, 1) -> wait
+DEBUG:hpbandster:DISPATCHER: job (0, 1, 1) dispatched on hpbandster.run_0.worker.tfpool57.19110140255077799680
+DEBUG:hpbandster:DISPATCHER: jobs to submit = 0, number of idle workers = 0 -> waiting!
+INFO:hpbandster.run_0.worker.tfpool57.19110:WORKER: start processing job (0, 1, 1)
+DEBUG:hpbandster.run_0.worker.tfpool57.19110:WORKER: args: ()
+DEBUG:hpbandster.run_0.worker.tfpool57.19110:WORKER: kwargs: {'config': {'test_parameter': 16.372644138150363}, 'budget': 2.5, 'working_directory': '.'}
+DEBUG:hpbandster.run_0.worker.tfpool57.19110:WORKER: done with job (0, 1, 1), trying to register it.
+INFO:hpbandster.run_0.worker.tfpool57.19110:WORKER: registered result for job (0, 1, 1) with dispatcher
+DEBUG:hpbandster:DISPATCHER: job (0, 1, 1) finished
+DEBUG:hpbandster:DISPATCHER: register_result: lock acquired
+DEBUG:hpbandster:DISPATCHER: job (0, 1, 1) on hpbandster.run_0.worker.tfpool57.19110140255077799680 finished
+DEBUG:hpbandster:job_id: (0, 1, 1)
+args: ()
+kwargs: {'config': {'test_parameter': 16.372644138150363}, 'budget': 2.5, 'working_directory': '.'}
+result: None
+exception: Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1068, in _run
+    allow_operation=False)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 2708, in as_graph_element
+    return self._as_graph_element_locked(obj, allow_tensor, allow_operation)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 2787, in _as_graph_element_locked
+    raise ValueError("Tensor %s is not an element of this graph." % obj)
+ValueError: Tensor Tensor("Placeholder_20:0", shape=(1, 1, 192, 64), dtype=float32) is not an element of this graph.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wilhelmb/.local/lib/python3.5/site-packages/hpbandster-0.1.0-py3.5.egg/hpbandster/distributed/worker.py", line 106, in start_computation
+    result = {'result': self.compute(*args, **kwargs),
+  File "keras_debug.py", line 38, in compute
+    *args, **kwargs)
+  File "keras_debug.py", line 28, in keras_objective
+    load_model()
+  File "keras_debug.py", line 74, in load_model
+    pretrained_model = InceptionV3(weights='imagenet', include_top=False)
+  File "/usr/local/lib/python3.5/dist-packages/keras/applications/inception_v3.py", line 387, in InceptionV3
+    model.load_weights(weights_path)
+  File "/usr/local/lib/python3.5/dist-packages/keras/engine/topology.py", line 2622, in load_weights
+    load_weights_from_hdf5_group(f, self.layers)
+  File "/usr/local/lib/python3.5/dist-packages/keras/engine/topology.py", line 3142, in load_weights_from_hdf5_group
+    K.batch_set_value(weight_value_tuples)
+  File "/usr/local/lib/python3.5/dist-packages/keras/backend/tensorflow_backend.py", line 2243, in batch_set_value
+    get_session().run(assign_ops, feed_dict=feed_dict)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 895, in run
+    run_metadata_ptr)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1071, in _run
+    + e.args[0])
+TypeError: Cannot interpret feed_dict key as Tensor: Tensor Tensor("Placeholder_20:0", shape=(1, 1, 192, 64), dtype=float32) is not an element of this graph.
+
+
+DEBUG:hpbandster:job_callback for (0, 1, 1)
+DEBUG:hpbandster:HBMASTER: Trying to run another job!
+WARNING:hpbandster:job (0, 1, 1) failed with exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1068, in _run
+    allow_operation=False)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 2708, in as_graph_element
+    return self._as_graph_element_locked(obj, allow_tensor, allow_operation)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 2787, in _as_graph_element_locked
+    raise ValueError("Tensor %s is not an element of this graph." % obj)
+ValueError: Tensor Tensor("Placeholder_20:0", shape=(1, 1, 192, 64), dtype=float32) is not an element of this graph.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wilhelmb/.local/lib/python3.5/site-packages/hpbandster-0.1.0-py3.5.egg/hpbandster/distributed/worker.py", line 106, in start_computation
+    result = {'result': self.compute(*args, **kwargs),
+  File "keras_debug.py", line 38, in compute
+    *args, **kwargs)
+  File "keras_debug.py", line 28, in keras_objective
+    load_model()
+  File "keras_debug.py", line 74, in load_model
+    pretrained_model = InceptionV3(weights='imagenet', include_top=False)
+  File "/usr/local/lib/python3.5/dist-packages/keras/applications/inception_v3.py", line 387, in InceptionV3
+    model.load_weights(weights_path)
+  File "/usr/local/lib/python3.5/dist-packages/keras/engine/topology.py", line 2622, in load_weights
+    load_weights_from_hdf5_group(f, self.layers)
+  File "/usr/local/lib/python3.5/dist-packages/keras/engine/topology.py", line 3142, in load_weights_from_hdf5_group
+    K.batch_set_value(weight_value_tuples)
+  File "/usr/local/lib/python3.5/dist-packages/keras/backend/tensorflow_backend.py", line 2243, in batch_set_value
+    get_session().run(assign_ops, feed_dict=feed_dict)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 895, in run
+    run_metadata_ptr)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1071, in _run
+    + e.args[0])
+TypeError: Cannot interpret feed_dict key as Tensor: Tensor Tensor("Placeholder_20:0", shape=(1, 1, 192, 64), dtype=float32) is not an element of this graph.
+
+DEBUG:hpbandster:DISPATCHER: Trying to submit another job.
+DEBUG:hpbandster:DISPATCHER: trying to submit job (1, 0, 1)
+DEBUG:hpbandster:DISPATCHER: jobs to submit = 0, number of idle workers = 1 -> waiting!
+DEBUG:hpbandster:DISPATCHER: trying to notify the job_runner thread.
+DEBUG:hpbandster:HBMASTER: job (1, 0, 1) submitted to dispatcher
+DEBUG:hpbandster:HBMASTER: schedule new run for iteration 0
+DEBUG:hpbandster:DISPATCHER: Trying to submit another job.
+DEBUG:hpbandster:HBMASTER: submitting job (0, 2, 0) to dispatcher
+DEBUG:hpbandster:DISPATCHER: starting job (1, 0, 1) on hpbandster.run_0.worker.tfpool57.19110140255077799680
+DEBUG:hpbandster:HBMASTER: running jobs: 1, queue sizes: (0, 1) -> wait
+DEBUG:hpbandster:DISPATCHER: job (1, 0, 1) dispatched on hpbandster.run_0.worker.tfpool57.19110140255077799680
+DEBUG:hpbandster:DISPATCHER: jobs to submit = 0, number of idle workers = 0 -> waiting!
+INFO:hpbandster.run_0.worker.tfpool57.19110:WORKER: start processing job (1, 0, 1)
+DEBUG:hpbandster.run_0.worker.tfpool57.19110:WORKER: args: ()
+DEBUG:hpbandster.run_0.worker.tfpool57.19110:WORKER: kwargs: {'config': {'test_parameter': 19.749337581409527}, 'budget': 2.5, 'working_directory': '.'}
+DEBUG:hpbandster.run_0.worker.tfpool57.19110:WORKER: done with job (1, 0, 1), trying to register it.
+INFO:hpbandster.run_0.worker.tfpool57.19110:WORKER: registered result for job (1, 0, 1) with dispatcher
+DEBUG:hpbandster:DISPATCHER: job (1, 0, 1) finished
+DEBUG:hpbandster:DISPATCHER: register_result: lock acquired
+DEBUG:hpbandster:DISPATCHER: job (1, 0, 1) on hpbandster.run_0.worker.tfpool57.19110140255077799680 finished
+DEBUG:hpbandster:job_id: (1, 0, 1)
+args: ()
+kwargs: {'config': {'test_parameter': 19.749337581409527}, 'budget': 2.5, 'working_directory': '.'}
+result: None
+exception: Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1068, in _run
+    allow_operation=False)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 2708, in as_graph_element
+    return self._as_graph_element_locked(obj, allow_tensor, allow_operation)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 2787, in _as_graph_element_locked
+    raise ValueError("Tensor %s is not an element of this graph." % obj)
+ValueError: Tensor Tensor("Placeholder_120:0", shape=(1, 1, 768, 128), dtype=float32) is not an element of this graph.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wilhelmb/.local/lib/python3.5/site-packages/hpbandster-0.1.0-py3.5.egg/hpbandster/distributed/worker.py", line 106, in start_computation
+    result = {'result': self.compute(*args, **kwargs),
+  File "keras_debug.py", line 38, in compute
+    *args, **kwargs)
+  File "keras_debug.py", line 28, in keras_objective
+    load_model()
+  File "keras_debug.py", line 74, in load_model
+    pretrained_model = InceptionV3(weights='imagenet', include_top=False)
+  File "/usr/local/lib/python3.5/dist-packages/keras/applications/inception_v3.py", line 387, in InceptionV3
+    model.load_weights(weights_path)
+  File "/usr/local/lib/python3.5/dist-packages/keras/engine/topology.py", line 2622, in load_weights
+    load_weights_from_hdf5_group(f, self.layers)
+  File "/usr/local/lib/python3.5/dist-packages/keras/engine/topology.py", line 3142, in load_weights_from_hdf5_group
+    K.batch_set_value(weight_value_tuples)
+  File "/usr/local/lib/python3.5/dist-packages/keras/backend/tensorflow_backend.py", line 2243, in batch_set_value
+    get_session().run(assign_ops, feed_dict=feed_dict)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 895, in run
+    run_metadata_ptr)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1071, in _run
+    + e.args[0])
+TypeError: Cannot interpret feed_dict key as Tensor: Tensor Tensor("Placeholder_120:0", shape=(1, 1, 768, 128), dtype=float32) is not an element of this graph.
+
+
+DEBUG:hpbandster:job_callback for (1, 0, 1)
+DEBUG:hpbandster:HBMASTER: Trying to run another job!
+WARNING:hpbandster:job (1, 0, 1) failed with exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1068, in _run
+    allow_operation=False)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 2708, in as_graph_element
+    return self._as_graph_element_locked(obj, allow_tensor, allow_operation)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 2787, in _as_graph_element_locked
+    raise ValueError("Tensor %s is not an element of this graph." % obj)
+ValueError: Tensor Tensor("Placeholder_120:0", shape=(1, 1, 768, 128), dtype=float32) is not an element of this graph.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wilhelmb/.local/lib/python3.5/site-packages/hpbandster-0.1.0-py3.5.egg/hpbandster/distributed/worker.py", line 106, in start_computation
+    result = {'result': self.compute(*args, **kwargs),
+  File "keras_debug.py", line 38, in compute
+    *args, **kwargs)
+  File "keras_debug.py", line 28, in keras_objective
+    load_model()
+  File "keras_debug.py", line 74, in load_model
+    pretrained_model = InceptionV3(weights='imagenet', include_top=False)
+  File "/usr/local/lib/python3.5/dist-packages/keras/applications/inception_v3.py", line 387, in InceptionV3
+    model.load_weights(weights_path)
+  File "/usr/local/lib/python3.5/dist-packages/keras/engine/topology.py", line 2622, in load_weights
+    load_weights_from_hdf5_group(f, self.layers)
+  File "/usr/local/lib/python3.5/dist-packages/keras/engine/topology.py", line 3142, in load_weights_from_hdf5_group
+    K.batch_set_value(weight_value_tuples)
+  File "/usr/local/lib/python3.5/dist-packages/keras/backend/tensorflow_backend.py", line 2243, in batch_set_value
+    get_session().run(assign_ops, feed_dict=feed_dict)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 895, in run
+    run_metadata_ptr)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1071, in _run
+    + e.args[0])
+TypeError: Cannot interpret feed_dict key as Tensor: Tensor Tensor("Placeholder_120:0", shape=(1, 1, 768, 128), dtype=float32) is not an element of this graph.
+
+DEBUG:hpbandster:DISPATCHER: trying to submit job (0, 2, 0)
+DEBUG:hpbandster:DISPATCHER: trying to notify the job_runner thread.
+DEBUG:hpbandster:HBMASTER: job (0, 2, 0) submitted to dispatcher
+DEBUG:hpbandster:HBMASTER: schedule new run for iteration 1
+DEBUG:hpbandster:HBMASTER: submitting job (1, 1, 0) to dispatcher
+DEBUG:hpbandster:HBMASTER: running jobs: 1, queue sizes: (0, 1) -> wait
+DEBUG:hpbandster:DISPATCHER: Trying to submit another job.
+DEBUG:hpbandster:DISPATCHER: starting job (0, 2, 0) on hpbandster.run_0.worker.tfpool57.19110140255077799680
+DEBUG:hpbandster:DISPATCHER: job (0, 2, 0) dispatched on hpbandster.run_0.worker.tfpool57.19110140255077799680
+DEBUG:hpbandster:DISPATCHER: jobs to submit = 0, number of idle workers = 0 -> waiting!
+INFO:hpbandster.run_0.worker.tfpool57.19110:WORKER: start processing job (0, 2, 0)
+DEBUG:hpbandster.run_0.worker.tfpool57.19110:WORKER: args: ()
+DEBUG:hpbandster.run_0.worker.tfpool57.19110:WORKER: kwargs: {'config': {'test_parameter': 10.737292804290174}, 'budget': 5.0, 'working_directory': '.'}
+DEBUG:hpbandster.run_0.worker.tfpool57.19110:WORKER: done with job (0, 2, 0), trying to register it.
+INFO:hpbandster.run_0.worker.tfpool57.19110:WORKER: registered result for job (0, 2, 0) with dispatcher
+DEBUG:hpbandster:DISPATCHER: job (0, 2, 0) finished
+DEBUG:hpbandster:DISPATCHER: register_result: lock acquired
+DEBUG:hpbandster:DISPATCHER: job (0, 2, 0) on hpbandster.run_0.worker.tfpool57.19110140255077799680 finished
+DEBUG:hpbandster:job_id: (0, 2, 0)
+args: ()
+kwargs: {'config': {'test_parameter': 10.737292804290174}, 'budget': 5.0, 'working_directory': '.'}
+result: None
+exception: Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1068, in _run
+    allow_operation=False)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 2708, in as_graph_element
+    return self._as_graph_element_locked(obj, allow_tensor, allow_operation)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 2787, in _as_graph_element_locked
+    raise ValueError("Tensor %s is not an element of this graph." % obj)
+ValueError: Tensor Tensor("Placeholder_44:0", shape=(96,), dtype=float32) is not an element of this graph.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wilhelmb/.local/lib/python3.5/site-packages/hpbandster-0.1.0-py3.5.egg/hpbandster/distributed/worker.py", line 106, in start_computation
+    result = {'result': self.compute(*args, **kwargs),
+  File "keras_debug.py", line 38, in compute
+    *args, **kwargs)
+  File "keras_debug.py", line 28, in keras_objective
+    load_model()
+  File "keras_debug.py", line 74, in load_model
+    pretrained_model = InceptionV3(weights='imagenet', include_top=False)
+  File "/usr/local/lib/python3.5/dist-packages/keras/applications/inception_v3.py", line 387, in InceptionV3
+    model.load_weights(weights_path)
+  File "/usr/local/lib/python3.5/dist-packages/keras/engine/topology.py", line 2622, in load_weights
+    load_weights_from_hdf5_group(f, self.layers)
+  File "/usr/local/lib/python3.5/dist-packages/keras/engine/topology.py", line 3142, in load_weights_from_hdf5_group
+    K.batch_set_value(weight_value_tuples)
+  File "/usr/local/lib/python3.5/dist-packages/keras/backend/tensorflow_backend.py", line 2243, in batch_set_value
+    get_session().run(assign_ops, feed_dict=feed_dict)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 895, in run
+    run_metadata_ptr)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1071, in _run
+    + e.args[0])
+TypeError: Cannot interpret feed_dict key as Tensor: Tensor Tensor("Placeholder_44:0", shape=(96,), dtype=float32) is not an element of this graph.
+
+
+DEBUG:hpbandster:job_callback for (0, 2, 0)
+DEBUG:hpbandster:HBMASTER: Trying to run another job!
+DEBUG:hpbandster:DISPATCHER: Trying to submit another job.
+WARNING:hpbandster:job (0, 2, 0) failed with exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1068, in _run
+    allow_operation=False)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 2708, in as_graph_element
+    return self._as_graph_element_locked(obj, allow_tensor, allow_operation)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 2787, in _as_graph_element_locked
+    raise ValueError("Tensor %s is not an element of this graph." % obj)
+ValueError: Tensor Tensor("Placeholder_44:0", shape=(96,), dtype=float32) is not an element of this graph.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wilhelmb/.local/lib/python3.5/site-packages/hpbandster-0.1.0-py3.5.egg/hpbandster/distributed/worker.py", line 106, in start_computation
+    result = {'result': self.compute(*args, **kwargs),
+  File "keras_debug.py", line 38, in compute
+    *args, **kwargs)
+  File "keras_debug.py", line 28, in keras_objective
+    load_model()
+  File "keras_debug.py", line 74, in load_model
+    pretrained_model = InceptionV3(weights='imagenet', include_top=False)
+  File "/usr/local/lib/python3.5/dist-packages/keras/applications/inception_v3.py", line 387, in InceptionV3
+    model.load_weights(weights_path)
+  File "/usr/local/lib/python3.5/dist-packages/keras/engine/topology.py", line 2622, in load_weights
+    load_weights_from_hdf5_group(f, self.layers)
+  File "/usr/local/lib/python3.5/dist-packages/keras/engine/topology.py", line 3142, in load_weights_from_hdf5_group
+    K.batch_set_value(weight_value_tuples)
+  File "/usr/local/lib/python3.5/dist-packages/keras/backend/tensorflow_backend.py", line 2243, in batch_set_value
+    get_session().run(assign_ops, feed_dict=feed_dict)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 895, in run
+    run_metadata_ptr)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1071, in _run
+    + e.args[0])
+TypeError: Cannot interpret feed_dict key as Tensor: Tensor Tensor("Placeholder_44:0", shape=(96,), dtype=float32) is not an element of this graph.
+
+DEBUG:hpbandster:DISPATCHER: jobs to submit = 0, number of idle workers = 1 -> waiting!
+DEBUG:hpbandster:DISPATCHER: trying to submit job (1, 1, 0)
+DEBUG:hpbandster:DISPATCHER: trying to notify the job_runner thread.
+DEBUG:hpbandster:HBMASTER: job (1, 1, 0) submitted to dispatcher
+DEBUG:hpbandster:HBMASTER: schedule new run for iteration 2
+DEBUG:hpbandster:DISPATCHER: Trying to submit another job.
+DEBUG:hpbandster:HBMASTER: submitting job (2, 0, 0) to dispatcher
+DEBUG:hpbandster:DISPATCHER: starting job (1, 1, 0) on hpbandster.run_0.worker.tfpool57.19110140255077799680
+DEBUG:hpbandster:HBMASTER: running jobs: 1, queue sizes: (0, 1) -> wait
+DEBUG:hpbandster:DISPATCHER: job (1, 1, 0) dispatched on hpbandster.run_0.worker.tfpool57.19110140255077799680
+DEBUG:hpbandster:DISPATCHER: jobs to submit = 0, number of idle workers = 0 -> waiting!
+INFO:hpbandster.run_0.worker.tfpool57.19110:WORKER: start processing job (1, 1, 0)
+DEBUG:hpbandster.run_0.worker.tfpool57.19110:WORKER: args: ()
+DEBUG:hpbandster.run_0.worker.tfpool57.19110:WORKER: kwargs: {'config': {'test_parameter': 13.283821260887162}, 'budget': 5.0, 'working_directory': '.'}
+DEBUG:hpbandster.run_0.worker.tfpool57.19110:WORKER: done with job (1, 1, 0), trying to register it.
+INFO:hpbandster.run_0.worker.tfpool57.19110:WORKER: registered result for job (1, 1, 0) with dispatcher
+DEBUG:hpbandster:DISPATCHER: job (1, 1, 0) finished
+DEBUG:hpbandster:DISPATCHER: register_result: lock acquired
+DEBUG:hpbandster:DISPATCHER: job (1, 1, 0) on hpbandster.run_0.worker.tfpool57.19110140255077799680 finished
+DEBUG:hpbandster:job_id: (1, 1, 0)
+args: ()
+kwargs: {'config': {'test_parameter': 13.283821260887162}, 'budget': 5.0, 'working_directory': '.'}
+result: None
+exception: Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1068, in _run
+    allow_operation=False)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 2708, in as_graph_element
+    return self._as_graph_element_locked(obj, allow_tensor, allow_operation)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 2787, in _as_graph_element_locked
+    raise ValueError("Tensor %s is not an element of this graph." % obj)
+ValueError: Tensor Tensor("Placeholder_54:0", shape=(48,), dtype=float32) is not an element of this graph.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wilhelmb/.local/lib/python3.5/site-packages/hpbandster-0.1.0-py3.5.egg/hpbandster/distributed/worker.py", line 106, in start_computation
+    result = {'result': self.compute(*args, **kwargs),
+  File "keras_debug.py", line 38, in compute
+    *args, **kwargs)
+  File "keras_debug.py", line 28, in keras_objective
+    load_model()
+  File "keras_debug.py", line 74, in load_model
+    pretrained_model = InceptionV3(weights='imagenet', include_top=False)
+  File "/usr/local/lib/python3.5/dist-packages/keras/applications/inception_v3.py", line 387, in InceptionV3
+    model.load_weights(weights_path)
+  File "/usr/local/lib/python3.5/dist-packages/keras/engine/topology.py", line 2622, in load_weights
+    load_weights_from_hdf5_group(f, self.layers)
+  File "/usr/local/lib/python3.5/dist-packages/keras/engine/topology.py", line 3142, in load_weights_from_hdf5_group
+    K.batch_set_value(weight_value_tuples)
+  File "/usr/local/lib/python3.5/dist-packages/keras/backend/tensorflow_backend.py", line 2243, in batch_set_value
+    get_session().run(assign_ops, feed_dict=feed_dict)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 895, in run
+    run_metadata_ptr)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1071, in _run
+    + e.args[0])
+TypeError: Cannot interpret feed_dict key as Tensor: Tensor Tensor("Placeholder_54:0", shape=(48,), dtype=float32) is not an element of this graph.
+
+
+DEBUG:hpbandster:job_callback for (1, 1, 0)
+DEBUG:hpbandster:DISPATCHER: Trying to submit another job.
+DEBUG:hpbandster:HBMASTER: Trying to run another job!
+DEBUG:hpbandster:DISPATCHER: jobs to submit = 0, number of idle workers = 1 -> waiting!
+WARNING:hpbandster:job (1, 1, 0) failed with exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1068, in _run
+    allow_operation=False)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 2708, in as_graph_element
+    return self._as_graph_element_locked(obj, allow_tensor, allow_operation)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py", line 2787, in _as_graph_element_locked
+    raise ValueError("Tensor %s is not an element of this graph." % obj)
+ValueError: Tensor Tensor("Placeholder_54:0", shape=(48,), dtype=float32) is not an element of this graph.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wilhelmb/.local/lib/python3.5/site-packages/hpbandster-0.1.0-py3.5.egg/hpbandster/distributed/worker.py", line 106, in start_computation
+    result = {'result': self.compute(*args, **kwargs),
+  File "keras_debug.py", line 38, in compute
+    *args, **kwargs)
+  File "keras_debug.py", line 28, in keras_objective
+    load_model()
+  File "keras_debug.py", line 74, in load_model
+    pretrained_model = InceptionV3(weights='imagenet', include_top=False)
+  File "/usr/local/lib/python3.5/dist-packages/keras/applications/inception_v3.py", line 387, in InceptionV3
+    model.load_weights(weights_path)
+  File "/usr/local/lib/python3.5/dist-packages/keras/engine/topology.py", line 2622, in load_weights
+    load_weights_from_hdf5_group(f, self.layers)
+  File "/usr/local/lib/python3.5/dist-packages/keras/engine/topology.py", line 3142, in load_weights_from_hdf5_group
+    K.batch_set_value(weight_value_tuples)
+  File "/usr/local/lib/python3.5/dist-packages/keras/backend/tensorflow_backend.py", line 2243, in batch_set_value
+    get_session().run(assign_ops, feed_dict=feed_dict)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 895, in run
+    run_metadata_ptr)
+  File "/usr/local/lib/python3.5/dist-packages/tensorflow/python/client/session.py", line 1071, in _run
+    + e.args[0])
+TypeError: Cannot interpret feed_dict key as Tensor: Tensor Tensor("Placeholder_54:0", shape=(48,), dtype=float32) is not an element of this graph.
+
+DEBUG:hpbandster:DISPATCHER: trying to submit job (2, 0, 0)
+DEBUG:hpbandster:DISPATCHER: trying to notify the job_runner thread.
+DEBUG:hpbandster:HBMASTER: job (2, 0, 0) submitted to dispatcher
+DEBUG:hpbandster:DISPATCHER: Trying to submit another job.
+DEBUG:hpbandster:HBMASTER: schedule new run for iteration 2
+DEBUG:hpbandster:DISPATCHER: starting job (2, 0, 0) on hpbandster.run_0.worker.tfpool57.19110140255077799680
+DEBUG:hpbandster:HBMASTER: submitting job (2, 0, 1) to dispatcher
+DEBUG:hpbandster:HBMASTER: running jobs: 1, queue sizes: (0, 1) -> wait
+DEBUG:hpbandster:DISPATCHER: job (2, 0, 0) dispatched on hpbandster.run_0.worker.tfpool57.19110140255077799680
+DEBUG:hpbandster:DISPATCHER: jobs to submit = 0, number of idle workers = 0 -> waiting!
+INFO:hpbandster.run_0.worker.tfpool57.19110:WORKER: start processing job (2, 0, 0)
+DEBUG:hpbandster.run_0.worker.tfpool57.19110:WORKER: args: ()
+DEBUG:hpbandster.run_0.worker.tfpool57.19110:WORKER: kwargs: {'config': {'test_parameter': 12.751265234332244}, 'budget': 5.0, 'working_directory': '.'}
+Traceback (most recent call last):
+  File "keras_debug.py", line 88, in <module>
+    test_hpbandster()
+  File "keras_debug.py", line 66, in test_hpbandster
+    res = HB.run(10, min_n_workers=1)
+  File "/home/wilhelmb/.local/lib/python3.5/site-packages/hpbandster-0.1.0-py3.5.egg/hpbandster/HB_master.py", line 176, in run
+  File "/home/wilhelmb/.local/lib/python3.5/site-packages/hpbandster-0.1.0-py3.5.egg/hpbandster/HB_master.py", line 223, in _submit_job
+  File "/usr/lib/python3.5/threading.py", line 293, in wait
+    waiter.acquire()
+KeyboardInterrupt
+Exception ignored in: <module 'threading' from '/usr/lib/python3.5/threading.py'>
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/threading.py", line 1288, in _shutdown
+    t.join()
+  File "/usr/lib/python3.5/threading.py", line 1054, in join
+    self._wait_for_tstate_lock()
+  File "/usr/lib/python3.5/threading.py", line 1070, in _wait_for_tstate_lock
+    elif lock.acquire(block, timeout):
+KeyboardInterrupt
